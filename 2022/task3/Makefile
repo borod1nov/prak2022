@@ -1,7 +1,7 @@
 main: main.o list.o word.o
 	gcc main.o list.o word.o -o main
 
-main.o:
+main.o: main.c
 	gcc -c main.c -o main.o
 
 list.o: list.c list.h
